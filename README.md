@@ -20,6 +20,12 @@ these tabs:
 - **Settings**: the kill switch. **Gallery online** hides every photo, and **Taking
   photos** closes the photo form. The same two switches are checkboxes in the Google
   Sheet's **Settings** tab.
+- **Stories (First Reader)**: community stories families submit through First Reader's
+  Google Form, each with Gemini's first read (score, edited text, facts to verify and
+  more). Staff approve a story to publish it to the Wix website, hold it back, or edit its
+  text. The same decisions are checkboxes in the First Reader Review Sheet, and both stay
+  in step. Code in `src/first-reader/`; backend and setup in
+  [`apps-script/FIRST_READER_SETUP.md`](apps-script/FIRST_READER_SETUP.md).
 
 ## Backend
 

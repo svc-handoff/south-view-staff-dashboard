@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 375" role="img" aria-label="No photo shared">
+  <rect width="300" height="375" fill="#f7f2f2"/>
+  <rect x="14" y="14" width="272" height="347" fill="none" stroke="#e6dede" stroke-width="2"/>
+  <circle cx="150" cy="140" r="52" fill="#e6dede"/>
+  <path d="M58 300c8-58 48-92 92-92s84 34 92 92z" fill="#e6dede"/>
+  <text x="150" y="338" text-anchor="middle" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#43311f">No photo shared</text>
+</svg>

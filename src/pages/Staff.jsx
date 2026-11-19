@@ -18,6 +18,7 @@ import { MAX_DETAILS_LENGTH, MAX_EVENT_NAME_LENGTH, cleanEventName, isShownToday
 import { useEvents } from '../events'
 import { AiCheckPanel, Photo, formatDate } from '../components'
 import QrSign from './QrSign'
+import FirstReader from '../first-reader/FirstReader'
 
 const TABS = [
   { status: 'pending', label: 'Pending review' },
@@ -201,6 +202,9 @@ function ReviewQueue({ onLocked }) {
         <button className={tab === 'settings' ? 'tab active' : 'tab'} onClick={() => setTab('settings')}>
           Settings
         </button>
+        <button className={tab === 'stories' ? 'tab active' : 'tab'} onClick={() => setTab('stories')}>
+          Stories (First Reader)
+        </button>
       </div>
 
       {error && <p className="error no-print">{error}</p>}
@@ -209,6 +213,7 @@ function ReviewQueue({ onLocked }) {
       )}
       {tab === 'qr' && <QrSign />}
       {tab === 'settings' && <SettingsPanel onError={handleError} />}
+      {tab === 'stories' && <FirstReader onError={handleError} />}
       {TABS.some((t) => t.status === tab) && shown.length === 0 && <p className="empty">Nothing here right now.</p>}
 
       <div className="review-list">
